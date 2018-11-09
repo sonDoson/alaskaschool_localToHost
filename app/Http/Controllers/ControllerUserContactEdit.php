@@ -27,8 +27,12 @@ class ControllerUserContactEdit extends Controller
         $total_value[1]['value'] = $request->youtube;
         $total_value[2]['name'] = 'instagram';
         $total_value[2]['value'] = $request->instagram;
+        //map
+        $str_map = $request->map;
+        $str_map = explode(" ",$str_map);
+        
         $total_value[3]['name'] = 'map';
-        $total_value[3]['value'] = $request->map;
+        $total_value[3]['value'] = $str_map[1];
         foreach($total_value as $value){
             if($value['value'] !== null){
                 DB::table('contact')->where('id', 1)->update([$value['name'] => $value['value']]);
