@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Alaskaschool</title>
+    <link rel="shortcut icon" href="{{ asset('/uploads/logo/logo.ico')}}" />
     <!-- Fonts -->
     <link href="{{asset('css/font_awesome/fontawesome-free-5.3.1-web')}}/css/all.css" rel="stylesheet">
     <!-- Styles -->

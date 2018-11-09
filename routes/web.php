@@ -27,6 +27,8 @@ Route::get('/thank-you', 'ControllerThanks@getThanks')->name('getThanks');
 Route::get('/login', 'ControllerUserLogin@getLogin')->name('login');
 Route::post('/login', 'ControllerUserLogin@postLogin')->name('postLogin');
 Route::get('/logout', 'ControllerUserLogout@getLogout')->name('getLogout');
+Route::get('/user/repasswd', 'ControllerUserRePasswd@getRePasswd')->name('getRePasswd');
+Route::post('/user/repasswd', 'ControllerUserRePasswd@postRePasswd')->name('postRePasswd');
 
 Route::group(['middleware' => ['auth']], function () {
    
