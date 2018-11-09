@@ -1,5 +1,6 @@
 <nav>
-    <div id="nav_header" style="width: auto; height: 170px;">
+    <div id="nav_header" style="width: 140px; height: 170px; margin: 0 auto;">
+        <img src="{{ asset('uploads/logo/logo02.png') }}" alt="alaska school" width="100%" height="auto" style="margin-top: 30px;" />
     </div>
     <div id="nav_u">
         <ul>

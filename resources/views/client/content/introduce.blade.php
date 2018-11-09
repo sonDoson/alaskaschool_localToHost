@@ -33,7 +33,6 @@
                     <a href="{{ '/contact' }}">{{ $contact[$lang[0]] }}</a>
                     
                     <form id="nav-search" method="GET" action="/search" style="display: inline-block;">
-                        <input type="hidden" name="_token" id="csrf-token" value="{{ Session::token() }}" />
                         <input type="text" name="search" />
                     </form>
                 </nav>
