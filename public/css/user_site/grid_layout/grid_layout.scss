@@ -1,0 +1,149 @@
+body{
+    background-color: #f7f7f7;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 10% auto;
+}
+#container{
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+//
+//DIV CENTER
+//
+
+.wrap-inline-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//
+//TITLE
+//
+
+#title{
+    margin-top: 5px;
+    margin-bottom: 25px;
+    text-align: center;
+    font-size: 2em;
+    color: #3f3951;
+}
+
+//
+//BOX
+//
+
+.box{
+    display: inline-block;
+    background-color: #e8fff5;
+    margin-bottom : 0;
+    padding: 10px;
+    box-shadow: 0px 0px 9px 0 rgba(0, 0, 0, 0.28);
+}
+.box_title{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+//
+//FORM
+//
+
+.form{
+    .post-td{
+        &:nth-child(1){
+            padding-right: 10px;
+        }
+        &:nth-child(2){
+            width: 600px;
+            padding-left: 10px;
+        }
+    }
+    label{
+        line-height: 30px;
+    }
+    input, select{
+        margin-bottom: 10px;
+        background-color: #ffffff;
+        box-shadow: 0px 0px 4px 0 rgba(0, 0, 0, 0.28);
+        height: 30px;
+        border: none;
+    }
+    .input-style{
+        width: 200px;
+    }
+    input[type=text], input[type=password]{
+        padding-left: 5px;
+    }
+}
+
+//
+//TABLE
+//
+
+.table{
+    width: 100%;
+    box-shadow: 0px 0px 4px 0 rgba(0, 0, 0, 0.28);
+    tr{
+        height: 40px;
+        &:nth-child(2n+1){
+            background-color: #c6dcff;
+            .table-id{
+                background-color: #a0c5ff;
+            }
+        }
+        &:nth-child(2n){
+            background-color: #b8d6dd; //#ffc6c6;
+            .table-id{
+                background-color: #a5c9d1; //#ffa3a3;
+            }
+        }
+    }
+    th{
+        line-height: 38px;
+    }
+    td{
+    }
+    .table-id{
+        width: 80px;
+        font-weight: bold;
+    } 
+    .th-btn{
+        width: 60px;
+    }
+    .table-name{
+    }
+    .table-time{
+        text-align: center;
+    }
+}
+
+//
+//POPUP
+//
+
+.pop_back{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: #000000;
+    opacity: 0.4;
+    z-index: 5;
+
+}
+.pop{
+    position: absolute;
+    width: 400px;
+    height: auto;
+    left: 50%;
+    top: 0;
+    margin-left: -200px;
+    margin-top: 20vh;
+    background-color: #e8fff5;
+    box-shadow: 0px 0px 4px 0 rgba(0, 0, 0, 0.28);
+    z-index: 10;
+}

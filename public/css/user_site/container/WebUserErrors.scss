@@ -1,0 +1,19 @@
+#errors{
+    text-decoration: none;
+    position: absolute;
+    z-index: 15;
+    height: auto;
+    wdith: 200px;
+    left: 50%;
+    margin-left: -100px;
+    top: 30%;
+    background-color: #f94343;
+    border: 1px solid #ffa0a0;
+    border-radius: 4px;
+    padding-left: 20px;
+    padding-right: 20px;
+    li{
+        line-height: 30px;
+    }
+
+}

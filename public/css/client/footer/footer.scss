@@ -1,0 +1,31 @@
+footer{
+    width: 100%; height: 500px; background-color: #a6196f; color: #ffffff;
+}
+#footer-grid{
+    display: grid; grid-template-columns: 460px auto; grid-column-gap: 20px;
+}
+#footer-left-img{
+    width: 180px; height: 70px; margin-top: -20px;
+}
+#footer-left-form{
+    width: 100%; height: 250px; margin-top: 30px;
+    input{
+        margin: 0;
+        vertical-align:middle;
+        border: none;
+        padding: 2px;
+        line-height: 30px;
+        margin-bottom: 10px;
+    }
+    input[name="email"]{ width: 454px; }
+    input[name="name"],input[name="number"]{ width: 223px; }
+    input[type="submit"]{ width: 459px; color: #f0f0f0; font-weight: bold; background-color: #f99d1b; }
+    textarea{
+        border: none;
+        width: 456px;
+        height: 128px;
+    }
+}
+#footer-left-conect{
+    width: 100%; height:50px; margin-top: 30px; display: grid; grid-template-columns: 120px auto; grid-column-gap: 20px;
+}

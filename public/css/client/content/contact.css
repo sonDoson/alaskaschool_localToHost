@@ -1,0 +1,28 @@
+#section-send-mail {
+  width: 600px;
+  height: 100%;
+  display: table;
+  margin: 0 auto; }
+  #section-send-mail form {
+    margin-top: 15px; }
+    #section-send-mail form input[type="text"] {
+      padding: 5px;
+      margin-bottom: 5px;
+      line-height: 25px; }
+    #section-send-mail form input[name="email"] {
+      width: 586px; }
+    #section-send-mail form input[name="name"], #section-send-mail form input[name="number"] {
+      width: 285px; }
+    #section-send-mail form input[type="submit"] {
+      padding: 5px;
+      width: 598px;
+      line-height: 25px;
+      font-weight: bold;
+      background-color: #f99d1b;
+      color: #fff;
+      border: none; }
+  #section-send-mail textarea {
+    width: 593px;
+    height: 280px; }
+
+/*# sourceMappingURL=contact.css.map */

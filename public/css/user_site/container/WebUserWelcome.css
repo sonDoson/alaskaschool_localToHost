@@ -1,0 +1,21 @@
+#container {
+  position: relative;
+  background-color: #ffffff;
+  width: 100%; }
+
+#div-welcome {
+  width: 280px;
+  position: absolute;
+  margin-left: 50%;
+  left: -140px;
+  margin-top: 50vh;
+  top: -70px;
+  transition: 1.5s;
+  opacity: 0; }
+  #div-welcome h1 {
+    text-align: center;
+    color: grey;
+    margin-top: 20px;
+    margin-bottom: 20px; }
+
+/*# sourceMappingURL=container.css.map */

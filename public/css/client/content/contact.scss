@@ -1,0 +1,33 @@
+#section-send-mail{
+    width: 600px;
+    height: 100%;
+    display: table;
+    margin: 0 auto;
+    form{
+        margin-top: 15px;
+        input[type="text"]{
+            padding: 5px;
+            margin-bottom: 5px;
+            line-height: 25px;
+        }
+        input[name="email"]{
+            width: 586px;
+        }
+        input[name="name"], input[name="number"]{
+            width: 285px;
+        }
+        input[type="submit"]{
+            padding: 5px;
+            width: 598px;
+            line-height: 25px;
+            font-weight: bold;
+            background-color: #f99d1b;
+            color: #fff;
+            border: none;
+        }
+    }
+    textarea{
+        width: 593px;
+        height: 280px;
+    }
+}

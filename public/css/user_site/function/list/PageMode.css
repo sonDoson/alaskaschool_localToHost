@@ -1,0 +1,18 @@
+.page-mode {
+  margin-top: 10px; }
+  .page-mode button {
+    margin: 0;
+    transition: 0.2s;
+    border: none;
+    background-color: #826dff;
+    padding: 5px;
+    min-width: 30px;
+    color: #ffffff;
+    box-shadow: 0px 0px 4px 0 rgba(0, 0, 0, 0.28); }
+    .page-mode button:hover {
+      cursor: pointer;
+      background-color: grey; }
+    .page-mode button:active {
+      background-color: #23202d; }
+
+/*# sourceMappingURL=PageMode.css.map */
