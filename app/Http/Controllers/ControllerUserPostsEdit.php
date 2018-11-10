@@ -22,7 +22,7 @@ class ControllerUserPostsEdit extends Controller
         $data = PostsGetSingleItem::postsGetSingleItem($request->table_posts, $request->id);
 
         $data_category = Category::categoryGet('posts_category');
-        return view('User.content.posts_posts_edit', compact('layout', 'name_class', 'data_nav', 'data_category', 'data'));
+        return view('user.content.posts_posts_edit', compact('layout', 'name_class', 'data_nav', 'data_category', 'data'));
     }
     public function postPostsEdit(Request $request){
         $flag = 0;

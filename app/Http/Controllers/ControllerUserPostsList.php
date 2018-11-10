@@ -25,7 +25,7 @@ class ControllerUserPostsList extends Controller
         $total_page = ceil($total_page);
         if($total_page < 1){ $total_page = 1; };
         $total_posts_n_holder_page = $total_page . '-1';
-        return view('User.content.posts_list', compact('layout', 'function', 'name_class', 'data_nav', 'data_content', 'form_option', 'total_posts_n_holder_page'));
+        return view('user.content.posts_list', compact('layout', 'function', 'name_class', 'data_nav', 'data_content', 'form_option', 'total_posts_n_holder_page'));
     }
     public function postPostsList(Request $request){
         $layout = "WebUserList.css";

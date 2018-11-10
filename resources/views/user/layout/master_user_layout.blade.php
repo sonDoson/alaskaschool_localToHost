@@ -26,7 +26,7 @@
 
 </head>
 <body>
-    @include('User.nav_and_footer.nav')
+    @include('user.nav_and_footer.nav')
     <div id="container">
         @yield('content')
     </div>

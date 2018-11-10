@@ -17,7 +17,7 @@ class ControllerUserContactEdit extends Controller
         $data_nav = $main->navData();
         
         $db_contact = DB::table('contact')->where('id', 1)->first();
-        return view('User.content.contact_edit', compact('layout', 'name_class', 'data_nav', 'db_contact'));
+        return view('user.content.contact_edit', compact('layout', 'name_class', 'data_nav', 'db_contact'));
     }
     public function postEditContact(Request $request){
         $flag = 0;

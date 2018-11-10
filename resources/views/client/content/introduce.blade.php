@@ -10,7 +10,7 @@
     <link href="{{ asset('css/resetCss.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/client/header/header.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/client/footer/footer.css') }}" rel="stylesheet" />
-    <link href="{{ asset('css/client/content/Introduce.css') }}" rel="stylesheet" />
+    <link href="{{ asset('css/client/content/introduce.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/client/function/introduce_slider.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/client/function/banner.css') }}" rel="stylesheet" />
     <!-- JaveScript -->
@@ -86,8 +86,9 @@
                     </div>
                     
                     <div class="font-resize" id="intro-content-text">
-                        
+                        @if(!empty($section_0[key($section_0)][0]))
                         <a style="color: #000" href="{!! '/cat/' . $section_0[key($section_0)][0]['id_category'] . '/' . $section_0[key($section_0)][0]['id'] !!}">
+			@endif
                             @if(!empty($section_0[key($section_0)][0]))
                             <h2>{{ $section_0[key($section_0)][0][$lang[0]] }}</h2>
                             <br />

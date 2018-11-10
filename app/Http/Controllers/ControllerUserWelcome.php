@@ -14,6 +14,6 @@ class ControllerUserWelcome extends Controller
         $name_class = $data->class_name;
         $data_nav = $data->navData();
         //var_dump($data);
-        return view('User.content.welcome', compact('name_class', 'data_nav'));
+        return view('user.content.welcome', compact('name_class', 'data_nav'));
     }
 }

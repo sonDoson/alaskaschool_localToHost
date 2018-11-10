@@ -1,4 +1,4 @@
-@extends('User.layout.master_user_layout')
+@extends('user.layout.master_user_layout')
 @section('content')
 
 @if ($errors->any())

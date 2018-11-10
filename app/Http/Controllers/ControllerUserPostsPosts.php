@@ -15,7 +15,7 @@ class ControllerUserPostsPosts extends Controller
         $name_class = $main->class_name;
         $data_nav = $main->navData();
         $data_category = Category::categoryGet('posts_category');
-        return view('User.content.posts_posts', compact('layout', 'name_class', 'data_nav', 'data_category'));
+        return view('user.content.posts_posts', compact('layout', 'name_class', 'data_nav', 'data_category'));
     }
     public function postPostsPosts(Request $request){
         $flag_back = Posts::postsAdd($request, 'posts_posts', 1);

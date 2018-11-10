@@ -11,7 +11,7 @@
     <link href="{{ asset('css/client/footer/footer.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/client/header/header.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/client/header/banner_01.css') }}" rel="stylesheet" />
-    <link href="{{ asset('css/client/content/Introduce.css') }}" rel="stylesheet" />
+    <link href="{{ asset('css/client/content/introduce.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/client/function/introduce_slider.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/client/header/banner-01-css.css') }}" rel="stylesheet" />
     <!-- JaveScript -->

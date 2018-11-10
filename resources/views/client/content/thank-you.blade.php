@@ -9,7 +9,7 @@
     <link href="{{ asset('css/resetCss.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/client/header/header.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/client/footer/footer.css') }}" rel="stylesheet" />
-    <link href="{{ asset('css/client/content/Introduce.css') }}" rel="stylesheet" />
+    <link href="{{ asset('css/client/content/introduce.css') }}" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Satisfy" rel="stylesheet"> 
     <!-- JaveScript -->
     <script src="{{ asset('js/jquery-3.3.1.min.js') }}"></script>

@@ -14,7 +14,7 @@ class ControllerUserSetting extends Controller
         $data = new WebDataUserWelcome;
         $name_class = $data->class_name;
         $data_nav = $data->navData();
-        return view('User.content.setting', compact('layout', 'name_class', 'data_nav'));
+        return view('user.content.setting', compact('layout', 'name_class', 'data_nav'));
     }
     public function postUserSetting(Request $request){
         $flag = 0;
