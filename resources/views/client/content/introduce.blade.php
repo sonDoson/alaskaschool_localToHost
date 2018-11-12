@@ -164,7 +164,7 @@
             @for($i=0; $i < sizeof($section_1[key($section_1)]); $i++)
                 <a style="color: #000" href="{!! '/cat/' . $section_1[key($section_1)][$i]['id_category']. '/' . $section_1[key($section_1)][$i]['id'] !!}">
                 <div class="big-news-item">
-                    <div class="big-news-item-image" style="background-image:url({{ asset('uploads/contents/1.png') }})"></div>
+                    <div class="big-news-item-image" style="background-image:url({{ $section_1[key($section_1)][$i]['images'][0] }})"></div>
                     <div class="big-news-item-content font-resize">
                         <b>{!! $section_1[key($section_1)][$i][$lang[0]] !!}</b>
                         <div  class="big-news-item-content-text" style="">
@@ -180,7 +180,7 @@
             @for($i=0; $i < 4; $i++)
                 <a style="color: #000" href="{!! '/cat/' . $section_1[key($section_1)][$i]['id_category']. '/' . $section_1[key($section_1)][$i]['id'] !!}">
                 <div class="big-news-item">
-                    <div class="big-news-item-image" style="background-image:url({{ asset('uploads/contents/1.png') }})"></div>
+                    <div class="big-news-item-image" style="background-image:url({{ $section_1[key($section_1)][$i]['images'][0] }})"></div>
                     <div class="big-news-item-content font-resize">
                         <p><b>Lorem Ipsum is simply</b><br />dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
                         </p>

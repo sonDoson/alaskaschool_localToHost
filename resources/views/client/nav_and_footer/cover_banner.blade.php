@@ -1,6 +1,6 @@
 <div class="cover-baner">
     <div class="banner-01" style="overflow: hidden">
-        <section class="banner full" >
+        <section class="banner full" style="margin-top: -140px;" >
             @if(!empty($section_1[key($section_1)]))
             @if(sizeof($section_1[key($section_1)]) <= 4)
             @for($i=0; $i < sizeof($section_1[key($section_1)]); $i++)
@@ -27,7 +27,7 @@
             @if(!empty($section_1[key($section_1)]))
             @if(sizeof($section_1[key($section_1)]) <= 4)
             @for($i=0; $i < sizeof($section_1[key($section_1)]); $i++)
-            <a href="{!! '/cat/' . $section_1[key($section_1)][$i]['id_category']. '/' . $section_1[key($section_1)][$i]['id'] !!}">
+            <a style="color: #000" href="{!! '/cat/' . $section_1[key($section_1)][$i]['id_category']. '/' . $section_1[key($section_1)][$i]['id'] !!}">
             <div class="short-news-item">
                 <div class="short-news-item-timetag">
                     <div class="wrap-item-timetag">
@@ -46,7 +46,7 @@
             @endfor
             @else
             @for($i=0; $i < 4; $i++)
-            <a href="{!! '/cat/' . $section_1[key($section_1)][$i]['id_category']. '/' . $section_1[key($section_1)][$i]['id'] !!}">
+            <a style="color: #000" href="{!! '/cat/' . $section_1[key($section_1)][$i]['id_category']. '/' . $section_1[key($section_1)][$i]['id'] !!}">
             <div class="short-news-item">
                 <div class="short-news-item-timetag">
                     <div class="wrap-item-timetag">
