@@ -5,18 +5,18 @@
 
 CKEDITOR.editorConfig = function( config ) {
 	// Define changes to default configuration here. For example:
-	// config.language = 'fr';
+	// config.language = 'fr';http://
 	// config.uiColor = '#AADC6E';
 	
-	config.filebrowserBrowseUrl = 'http://www.alaska.edu.vn/js/ckfinder/ckfinder.html';
+	config.filebrowserBrowseUrl = 'http://localhost:8000/js/ckfinder/ckfinder.html';
  
-	config.filebrowserImageBrowseUrl = 'http://www.alaska.edu.vn/js/ckfinder/ckfinder.html?type=Images';
+	config.filebrowserImageBrowseUrl = 'http://localhost:8000/js/ckfinder/ckfinder.html?type=Images';
  
-	config.filebrowserFlashBrowseUrl = 'http://www.alaska.edu.vn/js/ckfinder/ckfinder.html?type=Flash';
+	config.filebrowserFlashBrowseUrl = 'http://localhost:8000/js/ckfinder/ckfinder.html?type=Flash';
  
-	config.filebrowserUploadUrl = 'http://www.alaska.edu.vn/js/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files';
+	config.filebrowserUploadUrl = 'http://localhost:8000/js/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Files';
  
-	config.filebrowserImageUploadUrl = 'http://www.alaska.edu.vn/js/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images';
+	config.filebrowserImageUploadUrl = 'http://localhost:8000/js/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Images';
  
-	config.filebrowserFlashUploadUrl = 'http://www.alaska.edu.vn/js/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash';
+	config.filebrowserFlashUploadUrl = 'http://localhost:8000/js/ckfinder/core/connector/php/connector.php?command=QuickUpload&type=Flash';
 };
