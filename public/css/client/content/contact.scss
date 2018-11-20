@@ -1,33 +1,403 @@
-#section-send-mail{
-    width: 600px;
-    height: 100%;
-    display: table;
-    margin: 0 auto;
-    form{
-        margin-top: 15px;
-        input[type="text"]{
-            padding: 5px;
-            margin-bottom: 5px;
-            line-height: 25px;
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+    #section-send-mail{
+        width: 600px;
+        height: 100%;
+        display: table;
+        margin: 0 auto;
+        form{
+            margin-top: 15px;
+            input[type="text"]{
+                padding: 5px;
+                margin-bottom: 5px;
+                line-height: 25px;
+            }
+            input[name="email"]{
+                width: 586px;
+            }
+            input[name="name"], input[name="number"]{
+                width: 285px;
+            }
+            input[type="submit"]{
+                padding: 5px;
+                width: 598px;
+                line-height: 25px;
+                font-weight: bold;
+                background-color: #f99d1b;
+                color: #fff;
+                border: none;
+            }
         }
-        input[name="email"]{
-            width: 586px;
+        textarea{
+            width: 593px;
+            height: 280px;
         }
-        input[name="name"], input[name="number"]{
-            width: 285px;
-        }
-        input[type="submit"]{
-            padding: 5px;
-            width: 598px;
-            line-height: 25px;
-            font-weight: bold;
-            background-color: #f99d1b;
-            color: #fff;
-            border: none;
+    } 
+    
+    .contact-container{
+        width: 100%;
+        
+        display: grid;
+        grid-template-columns: auto 300px;
+        grid-column-gap: 20px;
+        .contact-content{
+            width: 100%;
+            display: grid;
+            grid-template-rows: auto 250px;
+            grid-row-gap: 20px;
+            .contact-text{
+            }
+            #contact-map{
+                position: absolute;
+                bottom: 0;
+                display: block;
+                width: 600px;
+                height: 250px;
+                left: 50%;
+                margin-left: -300px;
+            }
         }
     }
-    textarea{
-        width: 593px;
-        height: 280px;
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    #section-send-mail{
+        width: 600px;
+        height: 100%;
+        display: table;
+        margin: 0 auto;
+        form{
+            margin-top: 15px;
+            input[type="text"]{
+                padding: 5px;
+                margin-bottom: 5px;
+                line-height: 25px;
+            }
+            input[name="email"]{
+                width: 586px;
+            }
+            input[name="name"], input[name="number"]{
+                width: 285px;
+            }
+            input[type="submit"]{
+                padding: 5px;
+                width: 598px;
+                line-height: 25px;
+                font-weight: bold;
+                background-color: #f99d1b;
+                color: #fff;
+                border: none;
+            }
+        }
+        textarea{
+            width: 593px;
+            height: 280px;
+        }
+    } 
+    
+    .contact-container{
+        width: 100%;
+
+        .contact-content{
+            width: 100%;
+            display: grid;
+            grid-template-rows: auto 250px;
+            grid-row-gap: 20px;
+            .contact-text{
+                width: 600px;
+                display: table;
+                margin: 0 auto;
+            }
+            #contact-map{
+                position: absolute;
+                bottom: 0;
+                display: block;
+                width: 600px;
+                height: 250px;
+                left: 50%;
+                margin-left: -300px;
+            }
+        }
     }
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    #section-send-mail{
+        width: 600px;
+        height: 100%;
+        display: table;
+        margin: 0 auto;
+        form{
+            margin-top: 15px;
+            input[type="text"]{
+                padding: 5px;
+                margin-bottom: 5px;
+                line-height: 25px;
+            }
+            input[name="email"]{
+                width: 586px;
+            }
+            input[name="name"], input[name="number"]{
+                width: 285px;
+            }
+            input[type="submit"]{
+                padding: 5px;
+                width: 598px;
+                line-height: 25px;
+                font-weight: bold;
+                background-color: #f99d1b;
+                color: #fff;
+                border: none;
+            }
+        }
+        textarea{
+            width: 593px;
+            height: 280px;
+        }
+    } 
+    
+    .contact-container{
+        width: 100%;
+
+        .contact-content{
+            width: 100%;
+            display: grid;
+            grid-template-rows: auto 250px;
+            grid-row-gap: 20px;
+            .contact-text{
+                width: 600px;
+                display: table;
+                margin: 0 auto;
+            }
+            #contact-map{
+                position: absolute;
+                bottom: 0;
+                display: block;
+                width: 600px;
+                height: 250px;
+                left: 50%;
+                margin-left: -300px;
+            }
+        }
+    }
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+    #section-send-mail{
+        width: 600px;
+        height: 100%;
+        display: table;
+        margin: 0 auto;
+        form{
+            margin-top: 15px;
+            input[type="text"]{
+                padding: 5px;
+                margin-bottom: 5px;
+                line-height: 25px;
+            }
+            input[name="email"]{
+                width: 586px;
+            }
+            input[name="name"], input[name="number"]{
+                width: 285px;
+            }
+            input[type="submit"]{
+                padding: 5px;
+                width: 598px;
+                line-height: 25px;
+                font-weight: bold;
+                background-color: #f99d1b;
+                color: #fff;
+                border: none;
+            }
+        }
+        textarea{
+            width: 593px;
+            height: 280px;
+        }
+    } 
+    
+    .contact-container{
+        width: 100%;
+
+        .contact-content{
+            width: 100%;
+            display: grid;
+            grid-template-rows: auto 250px;
+            grid-row-gap: 20px;
+            .contact-text{
+                width: 600px;
+                display: table;
+                margin: 0 auto;
+            }
+            #contact-map{
+                position: absolute;
+                bottom: 0;
+                display: block;
+                width: 600px;
+                height: 250px;
+                left: 50%;
+                margin-left: -300px;
+            }
+        }
+    }
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+    #section-send-mail{
+        width: 600px;
+        height: 100%;
+        display: table;
+        margin: 0 auto;
+        form{
+            margin-top: 15px;
+            input[type="text"]{
+                padding: 5px;
+                margin-bottom: 5px;
+                line-height: 25px;
+            }
+            input[name="email"]{
+                width: 586px;
+            }
+            input[name="name"], input[name="number"]{
+                width: 285px;
+            }
+            input[type="submit"]{
+                padding: 5px;
+                width: 598px;
+                line-height: 25px;
+                font-weight: bold;
+                background-color: #f99d1b;
+                color: #fff;
+                border: none;
+            }
+        }
+        textarea{
+            width: 593px;
+            height: 280px;
+        }
+    } 
+    
+    .contact-container{
+        width: 100%;
+        .contact-content{
+            width: 100%;
+            display: grid;
+            grid-template-rows: auto 250px;
+            grid-row-gap: 20px;
+            .contact-text{
+                width: 600px;
+                display: table;
+                margin: 0 auto;
+            }
+            #contact-map{
+                position: absolute;
+                bottom: 0;
+                display: block;
+                width: 600px;
+                height: 250px;
+                left: 50%;
+                margin-left: -300px;
+            }
+        }
+    }
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    #back-section-2{
+        display: block !important;
+    }
+    #section-send-mail{
+        width: 300px;
+        height: 100%;
+        display: table;
+        margin: 0 auto;
+        form{
+            margin-top: 15px;
+            input[type="text"]{
+                padding: 5px;
+                margin-bottom: 5px;
+                line-height: 25px;
+            }
+            input[name="email"]{
+                width: 284px;
+            }
+            input[name="name"], input[name="number"]{
+                width: 134px;
+            }
+            input[type="submit"]{
+                padding: 5px;
+                width: 296px;
+                line-height: 25px;
+                font-weight: bold;
+                background-color: #f99d1b;
+                color: #fff;
+                border: none;
+            }
+        }
+        textarea{
+            width: 291px;
+            height: 280px;
+        }
+    } 
+    
+    .contact-container{
+        width: 100%;
+
+        .contact-content{
+            width: 100%;
+            display: grid;
+            grid-template-rows: auto 250px;
+            grid-row-gap: 20px;
+            .contact-text{
+                width: 300px;
+                display: table;
+                margin: 0 auto;
+            }
+            #contact-map{
+                position: absolute;
+                bottom: 0;
+                display: block;
+                width: 300px;
+                height: 250px;
+                left: 50%;
+                margin-left: -150px;
+            }
+        }
+    }
+  
 }

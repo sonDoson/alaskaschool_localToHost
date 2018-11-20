@@ -1,0 +1,71 @@
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 1281px) {
+  .content-wrap {
+    display: grid;
+    grid-template-columns: auto 300px;
+    grid-column-gap: 20px; } }
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .content-wrap {
+    width: 100%; }
+
+  .content-text {
+    width: 940px;
+    display: block;
+    margin: 0 auto; } }
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .content-wrap {
+    width: 100%; }
+
+  .content-text {
+    width: 940px;
+    display: block;
+    margin: 0 auto; } }
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .content-wrap {
+    width: 100%; }
+
+  .content-text {
+    width: 620px;
+    display: block;
+    margin: 0 auto; } }
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+  .content-wrap {
+    width: 100%; }
+
+  .content-text {
+    width: 620px;
+    display: block;
+    margin: 0 auto; } }
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+  .content-wrap {
+    width: 100%; }
+
+  .content-text {
+    width: 300px;
+    display: block;
+    margin: 0 auto; } }
+
+/*# sourceMappingURL=lv_posts.css.map */

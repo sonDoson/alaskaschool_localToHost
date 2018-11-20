@@ -1,4 +1,8 @@
 .short-news{
+    width: 300px;
+    a{
+        color: #000;
+    }
     margin-top: 20px;
     .short-news-item{
         height: 60px;
@@ -18,11 +22,13 @@
             height: 33.7px;
             overflow: hidden;
             display: block;
+            
         }
     }
 }
 
 .big-news{
+    width: 300px;
     margin-top: 40px;
     .big-news-item-image{
         height: 204px;

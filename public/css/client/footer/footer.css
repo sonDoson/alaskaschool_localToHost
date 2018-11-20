@@ -1,50 +1,325 @@
-footer {
-  width: 100%;
-  height: 500px;
-  background-color: #a6196f;
-  color: #ffffff; }
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 1281px) {
+  footer {
+    width: 100%;
+    height: 500px;
+    background-color: #a6196f;
+    color: #ffffff; }
 
-#footer-grid {
-  display: grid;
-  grid-template-columns: 460px auto;
-  grid-column-gap: 20px; }
+  #footer-grid {
+    display: grid;
+    grid-template-columns: 460px auto;
+    grid-column-gap: 20px; }
 
-#footer-left-img {
-  width: 180px;
-  height: 70px;
-  margin-top: -20px; }
+  .footer-left {
+    margin: 0 auto; }
 
-#footer-left-form {
-  width: 100%;
-  height: 250px;
-  margin-top: 30px; }
-  #footer-left-form input {
-    margin: 0;
-    vertical-align: middle;
-    border: none;
-    padding: 2px;
-    line-height: 30px;
-    margin-bottom: 10px; }
-  #footer-left-form input[name="email"] {
-    width: 454px; }
-  #footer-left-form input[name="name"], #footer-left-form input[name="number"] {
-    width: 223px; }
-  #footer-left-form input[type="submit"] {
-    width: 459px;
-    color: #f0f0f0;
-    font-weight: bold;
-    background-color: #f99d1b; }
-  #footer-left-form textarea {
-    border: none;
-    width: 456px;
-    height: 128px; }
+  #footer-left-img {
+    width: 180px;
+    height: 70px;
+    margin-top: -20px; }
 
-#footer-left-conect {
-  width: 100%;
-  height: 50px;
-  margin-top: 30px;
-  display: grid;
-  grid-template-columns: 120px auto;
-  grid-column-gap: 20px; }
+  #footer-left-form {
+    width: 100%;
+    height: auto;
+    margin-top: 30px; }
+    #footer-left-form input {
+      margin: 0;
+      vertical-align: middle;
+      border: none;
+      padding: 2px;
+      line-height: 30px;
+      margin-bottom: 10px; }
+    #footer-left-form input[name="email"] {
+      width: 454px; }
+    #footer-left-form input[name="name"], #footer-left-form input[name="number"] {
+      width: 223px; }
+    #footer-left-form input[type="submit"] {
+      width: 459px;
+      color: #f0f0f0;
+      font-weight: bold;
+      background-color: #f99d1b; }
+    #footer-left-form textarea {
+      border: none;
+      width: 456px;
+      height: 128px; }
+
+  #footer-left-conect {
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 120px auto;
+    grid-column-gap: 20px; } }
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+  footer {
+    width: 100%;
+    height: 500px;
+    background-color: #a6196f;
+    color: #ffffff; }
+
+  #footer-grid {
+    display: grid;
+    grid-template-columns: 460px auto;
+    grid-column-gap: 20px; }
+
+  #footer-left-img {
+    width: 180px;
+    height: 70px;
+    margin-top: -20px; }
+
+  #footer-left-form {
+    width: 100%;
+    height: auto;
+    margin-top: 30px; }
+    #footer-left-form input {
+      margin: 0;
+      vertical-align: middle;
+      border: none;
+      padding: 2px;
+      line-height: 30px;
+      margin-bottom: 10px; }
+    #footer-left-form input[name="email"] {
+      width: 454px; }
+    #footer-left-form input[name="name"], #footer-left-form input[name="number"] {
+      width: 223px; }
+    #footer-left-form input[type="submit"] {
+      width: 459px;
+      color: #f0f0f0;
+      font-weight: bold;
+      background-color: #f99d1b; }
+    #footer-left-form textarea {
+      border: none;
+      width: 456px;
+      height: 128px; }
+
+  #footer-left-conect {
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 120px auto;
+    grid-column-gap: 20px; } }
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  footer {
+    width: 100%;
+    height: 500px;
+    background-color: #a6196f;
+    color: #ffffff; }
+
+  #footer-grid {
+    display: grid;
+    grid-template-columns: 460px auto;
+    grid-column-gap: 20px; }
+
+  #footer-left-img {
+    width: 180px;
+    height: 70px;
+    margin-top: -20px; }
+
+  #footer-left-form {
+    width: 100%;
+    height: auto;
+    margin-top: 30px; }
+    #footer-left-form input {
+      margin: 0;
+      vertical-align: middle;
+      border: none;
+      padding: 2px;
+      line-height: 30px;
+      margin-bottom: 10px; }
+    #footer-left-form input[name="email"] {
+      width: 454px; }
+    #footer-left-form input[name="name"], #footer-left-form input[name="number"] {
+      width: 223px; }
+    #footer-left-form input[type="submit"] {
+      width: 459px;
+      color: #f0f0f0;
+      font-weight: bold;
+      background-color: #f99d1b; }
+    #footer-left-form textarea {
+      border: none;
+      width: 456px;
+      height: 128px; }
+
+  #footer-left-conect {
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 120px auto;
+    grid-column-gap: 20px; } }
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  footer {
+    width: 100%;
+    height: 500px;
+    background-color: #a6196f;
+    color: #ffffff; }
+
+  #footer-grid {
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-column-gap: 20px; }
+
+  #footer-left-img {
+    width: 180px;
+    height: 70px;
+    margin-top: -20px; }
+
+  #footer-left-form {
+    width: 100%;
+    height: auto;
+    margin-top: 30px; }
+    #footer-left-form input {
+      margin: 0;
+      vertical-align: middle;
+      border: none;
+      padding: 2px;
+      line-height: 30px;
+      margin-bottom: 10px; }
+    #footer-left-form input[name="email"] {
+      width: 288px; }
+    #footer-left-form input[name="name"], #footer-left-form input[name="number"] {
+      width: 140px; }
+    #footer-left-form input[type="submit"] {
+      width: 293px;
+      color: #f0f0f0;
+      font-weight: bold;
+      background-color: #f99d1b; }
+    #footer-left-form textarea {
+      border: none;
+      width: 290px;
+      height: 128px; }
+
+  #footer-left-conect {
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 120px auto;
+    grid-column-gap: 20px; } }
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+  footer {
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px;
+    background-color: #a6196f;
+    color: #ffffff; }
+
+  #footer-grid {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-row-gap: 20px; }
+
+  #footer-left-img {
+    width: 180px;
+    height: 70px;
+    margin-top: -20px; }
+
+  #footer-left-form {
+    width: 100%;
+    height: auto;
+    margin-top: 30px; }
+    #footer-left-form input {
+      margin: 0;
+      vertical-align: middle;
+      border: none;
+      padding: 2px;
+      line-height: 30px;
+      margin-bottom: 10px; }
+    #footer-left-form input[name="email"] {
+      width: 612px; }
+    #footer-left-form input[name="name"], #footer-left-form input[name="number"] {
+      width: 302px; }
+    #footer-left-form input[type="submit"] {
+      width: 616px;
+      color: #f0f0f0;
+      font-weight: bold;
+      background-color: #f99d1b; }
+    #footer-left-form textarea {
+      border: none;
+      width: 614px;
+      height: 128px; }
+
+  #footer-left-conect {
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 120px auto;
+    grid-column-gap: 20px; } }
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+  footer {
+    width: 100%;
+    height: auto;
+    padding-bottom: 30px;
+    background-color: #a6196f;
+    color: #ffffff; }
+
+  #footer-grid {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-row-gap: 20px; }
+
+  #footer-left-img {
+    width: 180px;
+    height: 70px;
+    margin-top: -20px; }
+
+  #footer-left-form {
+    width: 100%;
+    height: auto;
+    margin-top: 30px; }
+    #footer-left-form input {
+      margin: 0;
+      vertical-align: middle;
+      border: none;
+      padding: 2px;
+      line-height: 30px;
+      margin-bottom: 10px; }
+    #footer-left-form input[name="email"] {
+      width: 299px; }
+    #footer-left-form input[name="name"], #footer-left-form input[name="number"] {
+      width: 145px; }
+    #footer-left-form input[type="submit"] {
+      width: 303px;
+      color: #f0f0f0;
+      font-weight: bold;
+      background-color: #f99d1b; }
+    #footer-left-form textarea {
+      border: none;
+      width: 301px;
+      height: 128px; }
+
+  #footer-left-conect {
+    width: 100%;
+    height: 50px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 120px auto;
+    grid-column-gap: 20px; } }
 
 /*# sourceMappingURL=footer.css.map */

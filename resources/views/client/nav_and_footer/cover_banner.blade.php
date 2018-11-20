@@ -1,6 +1,6 @@
 <div class="cover-baner">
     <div class="banner-01" style="overflow: hidden">
-        <section class="banner full" style="margin-top: -140px;" >
+        <section class="banner cover_01" style="margin-top: -150px;" >
             @if(!empty($section_1[key($section_1)]))
             @if(sizeof($section_1[key($section_1)]) <= 4)
             @for($i=0; $i < sizeof($section_1[key($section_1)]); $i++)

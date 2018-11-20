@@ -1,5 +1,8 @@
 .short-news {
+  width: 300px;
   margin-top: 20px; }
+  .short-news a {
+    color: #000; }
   .short-news .short-news-item {
     height: 60px;
     display: grid;
@@ -17,6 +20,7 @@
       display: block; }
 
 .big-news {
+  width: 300px;
   margin-top: 40px; }
   .big-news .big-news-item-image {
     height: 204px;

@@ -12,8 +12,10 @@
     <link href="{{ asset('css/client/header/header.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/client/header/banner_01.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/client/content/introduce.css') }}" rel="stylesheet" />
-    <link href="{{ asset('css/client/function/introduce_slider.css') }}" rel="stylesheet" />
+    <link href="{{ asset('css/client/content/layout_01_page.css') }}" rel="stylesheet" />
+    <link href="{{ asset('css/client/content/lv_category.css') }}" rel="stylesheet" />
     <link href="{{ asset('css/client/header/banner-01-css.css') }}" rel="stylesheet" />
+    <link href="{{ asset('css/client/items/items.css') }}" rel="stylesheet" />
     <!-- JaveScript -->
     <script src="{{ asset('js/jquery-3.3.1.min.js') }}"></script>
 
@@ -21,7 +23,7 @@
 <body>
     @include('client.nav_and_footer.nav')
     @include('client.nav_and_footer.cover_banner')
-    <div id="container" style="min-height: 500px;margin-top: 30px; display: grid; grid-template-columns: 300px auto; grid-column-gap: 20px">
+    <div id="container" style="">
         @include('client.nav_and_footer.nav_left_side')
         @yield('content')
     </div>

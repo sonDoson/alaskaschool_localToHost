@@ -1,6 +1,15 @@
 $().ready(function(){
-    var index = takeMarginLeft(606);
-    var margin_left = index[0];
+    $(window).resize(function() {
+        construct_slider();
+    });
+    
+    function construct_slider(){
+        var width_s = $('.wrap-section-2-slider').width();
+        index = takeMarginLeft(606, width_s);
+        margin_left = index[0];
+    }
+    construct_slider();
+    
     $('body').on('mouseenter', '#back-section-2', function(){
         hoverSmoke(margin_left, index[1]);
     }).on("mouseleave", "#back-section-2", function(){
@@ -22,14 +31,20 @@ $().ready(function(){
 });
 
 //function zone
-function takeMarginLeft(width_item){
+function takeMarginLeft(width_item, width_section){
+    //
     var margin_left =  $('.section-2-slider').css('margin-left');
     margin_left = parseInt(margin_left.split('px',1));
+    //
     var slider_width = $('.section-2-slider').css('width');
     slider_width = parseInt(slider_width.split('px',1));
+    //number of items
     var items = Math.round(slider_width / width_item);
-    var max_height = items - 2 ;
-    var max_height = max_height * 606;
+    //number of items in display
+    var items_show = Math.round(width_section / width_item);
+    
+    var max_height = items - items_show;
+    var max_height = max_height * width_item;
     
     return [margin_left, max_height];
 }

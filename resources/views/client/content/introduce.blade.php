@@ -101,14 +101,14 @@
                     
                     <div id="intro-content-video" style="overflow: hidden; background-color: #ffffff !important;">
                           <!-- Your embedded video player code -->
-                          <div class="fb-video" data-href="{{ $link }}" data-width="500" data-show-text="false">
+                          <div class="fb-video" data-href="{{ $link }}" data-show-text="false">
                           </div>
                     </div>
                     
                     <div class="font-resize" id="intro-content-text">
                         @if(!empty($section_0[key($section_0)][0]))
                         <a style="color: #000" href="{!! '/cat/' . $section_0[key($section_0)][0]['id_category'] . '/' . $section_0[key($section_0)][0]['id'] !!}">
-			@endif
+                        @endif
                             @if(!empty($section_0[key($section_0)][0]))
                             <h2>{{ $section_0[key($section_0)][0][$lang[0]] }}</h2>
                             <br />
@@ -260,14 +260,14 @@
         </div>
     </div>
 
-    <footer style="">
-        <div class="section" id="footer-grid" style="">
+    <footer>
+        <div class="section" id="footer-grid">
             <div class="footer-left">
-                <div id="footer-left-img" style="">
+                <div id="footer-left-img">
                     <img src="{{ asset('uploads/logo/logo02.png') }}" alt="alaska school" width="auto" height="100%" />
                 </div>
-                <div id="footer-left-form" style="">
-                    <form method="POST" action="/send_mail" style="">
+                <div id="footer-left-form">
+                    <form method="POST" action="/send_mail">
                         <input type="hidden" name="_token" id="csrf-token" value="{{ Session::token() }}" />
                         <input name="email" type="text" placeholder=" * Email..." required /><br />
                         <input name="name" type="text" placeholder=" * Họ và tên..." required />
@@ -276,7 +276,7 @@
                         <input type="submit" value="SEND">
                     </form>
                 </div>
-                <div id="footer-left-conect" style="">
+                <div id="footer-left-conect">
                     <div><p>Conect with us</p></div>
                     <div>
                         @foreach($contact['link'] as $key => $value)

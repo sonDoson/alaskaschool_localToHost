@@ -6,13 +6,11 @@
   background-color: #f99d1b;
   overflow-x: hidden; }
   #back-section-2 .wrap-section-2 {
-    width: 1260px;
     padding-top: 30px;
     display: table;
     margin: 0 auto; }
 
 .wrap-section-2-slider {
-  width: 1260px;
   height: auto;
   margin: 20px auto; }
 
@@ -64,7 +62,7 @@
 
 .btn-slider {
   position: absolute;
-  width: 5%;
+  width: 80px;
   height: 440px; }
   .btn-slider:hover {
     cursor: pointer; }
@@ -74,5 +72,66 @@
 
 .btn-slider-right {
   right: 0px; }
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 1281px) {
+  .wrap-section-2 {
+    width: 1260px; }
+
+  .wrap-section-2-slider {
+    width: 1260px; } }
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .wrap-section-2 {
+    width: 940px; }
+
+  .wrap-section-2-slider {
+    width: 940px; } }
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) {
+  .wrap-section-2 {
+    width: 620px; }
+
+  .wrap-section-2-slider {
+    width: 620px; } }
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .wrap-section-2 {
+    width: 620px; }
+
+  .wrap-section-2-slider {
+    width: 620px; } }
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+@media (min-width: 481px) and (max-width: 767px) {
+  .wrap-section-2 {
+    width: 620px; }
+
+  .wrap-section-2-slider {
+    width: 620px; } }
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+@media (min-width: 320px) and (max-width: 480px) {
+  .wrap-section-2 {
+    width: 300px; }
+
+  .wrap-section-2-slider {
+    width: 300px; } }
 
 /*# sourceMappingURL=introduce_slider.css.map */

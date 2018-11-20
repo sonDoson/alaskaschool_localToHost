@@ -1,6 +1,14 @@
 $().ready(function(){
-    var index = takeMarginLeft(240);
-    var margin_left = index[0];
+    $(window).resize(function() {
+        construct_slider();
+    });
+    
+    function construct_slider(){
+        var width_s = $('.wrap-section-2-slider').width();
+        index = takeMarginLeft(240, width_s);
+        margin_left = index[0];
+    }
+    construct_slider();
     
     $('body').on('mouseenter', '#back-section-2', function(){
         hoverSmoke(margin_left, index[1]);
@@ -10,27 +18,33 @@ $().ready(function(){
 
     $('.btn-slider-left').click(function(){
         if(margin_left < 0){
-            $('.section-2-slider').css('margin-left', margin_left += 240);
+            $('.section-2-slider').css('margin-left', margin_left += 242); // 240 is div width + gap
         }
         hoverSmoke(margin_left, index[1]);
     });
     $('.btn-slider-right').click(function(){
         if(margin_left > -index[1]){
-        $('.section-2-slider').css('margin-left', margin_left -= 240);
+        $('.section-2-slider').css('margin-left', margin_left -= 242);
         }
         hoverSmoke(margin_left, index[1]);
     });
 });
 
 //function zone
-function takeMarginLeft(width_item){
+function takeMarginLeft(width_item, width_section){
+    //
     var margin_left =  $('.section-2-slider').css('margin-left');
     margin_left = parseInt(margin_left.split('px',1));
+    //
     var slider_width = $('.section-2-slider').css('width');
     slider_width = parseInt(slider_width.split('px',1));
+    //number of items
     var items = Math.round(slider_width / width_item);
-    var max_height = items - 5;
-    var max_height = max_height * 240;
+    //number of items in display
+    var items_show = Math.round(width_section / width_item);
+    
+    var max_height = items - items_show;
+    var max_height = max_height * width_item;
     
     return [margin_left, max_height];
 }

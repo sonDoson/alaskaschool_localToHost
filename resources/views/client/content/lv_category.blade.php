@@ -1,6 +1,7 @@
 @extends('client.layout.master_client_layout')
 @section('content')
-    <div class="big-news" style="margin-top:0;grid-template-columns: 300px 300px 300px;grid-row-gap: 30px;">
+    <div class="bn-section-0-container">
+    <div class="big-news bn-section-0" style="margin-top: 0;">
         @if(!empty($section_0[key($section_0)]))
         @foreach($section_0[key($section_0)] as $key => $value)
             <a style="color: #000" href="{!! '/cat/' . $value['id_category']. '/' . $value['id'] !!}">
@@ -16,5 +17,6 @@
             </a>
         @endforeach
         @endif
+    </div>
     </div>
 @stop

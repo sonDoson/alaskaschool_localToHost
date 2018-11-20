@@ -1,7 +1,13 @@
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
 .cover-baner{
     width: 100%; 
-    height: 400px; 
-    background-color: lightblue;
+    height: 400px;
     display: grid;
     grid-template-columns: 72% auto;
 }
@@ -12,7 +18,7 @@
 .new_elements_first{
     width: 100%;
     height: 100%;
-    background-color: #f6f6f6;
+    background-color: #ffffff;
 }
 .short-news-top{
     margin-top: 20px;
@@ -45,4 +51,146 @@
             display: block;
         }
     }
+}
+  
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+    .cover-baner{
+        width: 100%; 
+        height: 400px;
+        display: grid;
+        grid-template-columns: 100% 0;
+    }
+    .banner-01{
+        width: 100%;
+        height: 100%;
+    }
+    .new_elements_first{
+        width: 100%;
+        height: 100%;
+        background-color: #f6f6f6;
+    }
+    .short-news-top{
+        display: none;
+    }
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+    .cover-baner{
+        width: 100%; 
+        height: 400px;
+        display: grid;
+        grid-template-columns: 100% 0;
+    }
+    .banner-01{
+        width: 100%;
+        height: 100%;
+    }
+    .new_elements_first{
+        width: 100%;
+        height: 100%;
+        background-color: #f6f6f6;
+    }
+    .short-news-top{
+        display: none;
+    }
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+    .cover-baner{
+        width: 100%; 
+        height: 400px;
+        display: grid;
+        grid-template-columns: 100% 0;
+    }
+    .banner-01{
+        width: 100%;
+        height: 100%;
+    }
+    .new_elements_first{
+        width: 100%;
+        height: 100%;
+        background-color: #f6f6f6;
+    }
+    .short-news-top{
+        display: none;
+    }
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+    .cover-baner{
+        width: 100%; 
+        height: 400px;
+        display: grid;
+        grid-template-columns: 100% 0;
+    }
+    .banner-01{
+        width: 100%;
+        height: 100%;
+    }
+    .new_elements_first{
+        width: 100%;
+        height: 100%;
+        background-color: #f6f6f6;
+    }
+    .short-news-top{
+        display: none;
+    }
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+    .cover-baner{
+        width: 100%; 
+        height: 400px;
+        display: grid;
+        grid-template-columns: 100% 0;
+    }
+    .banner-01{
+        width: 100%;
+        height: 100%;
+    }
+    .new_elements_first{
+        width: 100%;
+        height: 100%;
+        background-color: #f6f6f6;
+    }
+    .short-news-top{
+        display: none;
+    }
+  
 }

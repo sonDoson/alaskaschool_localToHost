@@ -7,14 +7,12 @@
     overflow-x: hidden;
     background-color: #f99d1b;
     .wrap-section-2{
-        width: 1260px;
         padding-top: 30px;
         display: table;
         margin: 0 auto;
     }
 }
 .wrap-section-2-slider{
-    width: 1260px;
     height: auto;
     margin: 0 auto;
 }
@@ -31,11 +29,17 @@
         height: auto;
         display: inline-block;
         .section-2-slider-image{
-            border: 10px solid #f0f0f0;
             width: 586px;
             height: 400px;
-            margin-top: 10px;
-            background-color: grey;
+            margin-top: 20px;
+            background-color: #f99d1b;
+        }
+        .wrap-image{
+            width: auto;
+            height: 400px;
+            overflow: hidden;
+            outline: 11px solid #f0f0f0;
+            outline-offset: -10px;
         }
     }
 }
@@ -75,4 +79,92 @@
 }
 .btn-slider-right{
     right: 0px;
+}
+
+//width
+
+@media (min-width: 1281px) {
+  
+    .wrap-section-2{
+        width: 1260px;
+    }
+    .wrap-section-2-slider{
+        width: 1260px;
+    }
+    
+}
+
+/* 
+  ##Device = Laptops, Desktops
+  ##Screen = B/w 1025px to 1280px
+*/
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  
+    .wrap-section-2{
+        width: 940px;
+    }
+    .wrap-section-2-slider{
+        width: 940px;
+    }
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+    .wrap-section-2{
+        width: 620px;
+    }
+    .wrap-section-2-slider{
+        width: 620px;
+    }
+  
+}
+
+/* 
+  ##Device = Tablets, Ipads (landscape)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+    .wrap-section-2{
+        width: 620px;
+    }
+    .wrap-section-2-slider{
+        width: 620px;
+    }
+  
+}
+
+/* 
+  ##Device = Low Resolution Tablets, Mobiles (Landscape)
+  ##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+  
+    .wrap-section-2{
+        width: 620px;
+    }
+    .wrap-section-2-slider{
+        width: 620px;
+    }
+  
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+  
+    #back-section-2{ display: none;}
+  
 }

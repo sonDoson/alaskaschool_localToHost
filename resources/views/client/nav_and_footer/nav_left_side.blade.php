@@ -1,4 +1,4 @@
-<div style="width: 300px; height: 100%; border-right: 1px solid lightgrey;">
+<div class="nav-left" style="">
     <ul class="font-resize"style="margin-left: 30px;">
         <li><a href="/cat/1" >{{ $category[1][$lang[0]] }}</a>
         <ul style="padding-left:30px">

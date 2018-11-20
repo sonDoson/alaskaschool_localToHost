@@ -15,7 +15,9 @@
         @foreach($section_0['images'] as $key => $value)
         <div class="section-2-slider-item">
             <div class="section-2-slider-image" style="overflow: hidden;">
+                <div class="wrap-image">
                 <img src="{{ $value }}" width="100%" height="auto"/>
+                </div>
             </div>
         </div>
         @endforeach
