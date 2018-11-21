@@ -27,6 +27,11 @@
                   <input id="search-box" type="text" name="search" placeholder="Search...">
                 </form>
                 </div>
+                <a href="/"><div class="logo-mobile" style="height: 40px;position:absolute;
+                    top:0;left: 50%; margin-left: -90px; background-position: center;background-repeat: no-repeat;
+                    background-size: 180px auto;
+                    background-image:url({{ asset('uploads/logo/logo_longtext.png') }});"></div>
+                </a>
                 <div style="display:inline-block;width: 40px; height: auto; float: right;">
                     <span style="font-size:30px;cursor:pointer" onclick="openNav()"><i style="margin-left: 5px; margin-top: 7px; color: #fff; font-size: 0.9em" class="fas fa-bars"></i></span>
                 </div>
